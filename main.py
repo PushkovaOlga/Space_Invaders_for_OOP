@@ -13,6 +13,10 @@ def start_game():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+            if event.type == pygame.KEYDOWN:
+                if event.type == pygame.K_d:
+                    maincharacter.rect.centerx += 1
+
 
         pygame.display.flip()
         maincharacter.output()
