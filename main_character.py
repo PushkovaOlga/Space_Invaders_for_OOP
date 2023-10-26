@@ -25,3 +25,6 @@ class MainCharacter():
             self.rect.centerx -= 1
         '''обновление экрана после движения для избавления от растягивая изображения'''
         screen.fill(0)
+
+    def create_maincharacter_again(self):
+        self.center = self.screen_rect.centerx
